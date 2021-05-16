@@ -1,0 +1,97 @@
+{"level":"debug","ts":"2021-05-16T15:08:46.976+0800","caller":"web_app/main.go:32","msg":"logger init success"}
+{"level":"error","ts":"2021-05-16T15:08:47.020+0800","caller":"mysql/mysql.go:20","msg":"connect db failed","error":"Error 1045: Access denied for user 'root'@'localhost' (using password: YES)"}
+{"level":"debug","ts":"2021-05-16T15:11:00.381+0800","caller":"web_app/main.go:32","msg":"logger init success"}
+{"level":"error","ts":"2021-05-16T15:11:00.394+0800","caller":"mysql/mysql.go:20","msg":"connect db failed","error":"Error 1045: Access denied for user 'root'@'localhost' (using password: YES)"}
+{"level":"debug","ts":"2021-05-16T15:11:12.449+0800","caller":"web_app/main.go:32","msg":"logger init success"}
+{"level":"info","ts":"2021-05-16T15:11:36.390+0800","caller":"logger/logger.go:90","msg":"/","status":200,"method":"GET","path":"/","query":"","ip":"::1","user-agent":"curl/7.64.1","errors":"","cost":0.000023836}
+{"level":"info","ts":"2021-05-16T15:16:08.115+0800","caller":"web_app/main.go:74","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2021-05-16T15:16:08.617+0800","caller":"web_app/main.go:83","msg":"Server exiting"}
+{"level":"debug","ts":"2021-05-16T15:23:18.162+0800","caller":"web_app/main.go:32","msg":"logger init success"}
+{"level":"info","ts":"2021-05-16T15:25:50.614+0800","caller":"web_app/main.go:74","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2021-05-16T15:25:51.116+0800","caller":"web_app/main.go:83","msg":"Server exiting"}
+{"level":"debug","ts":"2021-05-16T15:26:28.655+0800","caller":"web_app/main.go:32","msg":"logger init success"}
+{"level":"info","ts":"2021-05-16T15:26:33.807+0800","caller":"web_app/main.go:74","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2021-05-16T15:26:34.312+0800","caller":"web_app/main.go:83","msg":"Server exiting"}
+{"level":"debug","ts":"2021-05-16T15:27:15.771+0800","caller":"web_app/main.go:32","msg":"logger init success"}
+{"level":"info","ts":"2021-05-16T15:27:17.983+0800","caller":"web_app/main.go:74","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2021-05-16T15:27:18.488+0800","caller":"web_app/main.go:83","msg":"Server exiting"}
+{"level":"debug","ts":"2021-05-16T15:27:28.206+0800","caller":"web_app/main.go:32","msg":"logger init success"}
+{"level":"info","ts":"2021-05-16T15:27:33.553+0800","caller":"web_app/main.go:74","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2021-05-16T15:27:34.058+0800","caller":"web_app/main.go:83","msg":"Server exiting"}
+{"level":"debug","ts":"2021-05-16T15:28:59.456+0800","caller":"web_app/main.go:32","msg":"logger init success"}
+{"level":"info","ts":"2021-05-16T15:33:44.329+0800","caller":"web_app/main.go:74","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2021-05-16T15:33:44.834+0800","caller":"web_app/main.go:83","msg":"Server exiting"}
+{"level":"debug","ts":"2021-05-16T15:33:48.168+0800","caller":"web_app/main.go:32","msg":"logger init success"}
+{"level":"info","ts":"2021-05-16T15:33:50.054+0800","caller":"web_app/main.go:74","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2021-05-16T15:33:50.554+0800","caller":"web_app/main.go:83","msg":"Server exiting"}
+{"level":"debug","ts":"2021-05-16T15:49:56.850+0800","caller":"bluebubble/main.go:32","msg":"logger init success"}
+{"level":"info","ts":"2021-05-16T15:49:59.372+0800","caller":"bluebubble/main.go:74","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2021-05-16T15:49:59.873+0800","caller":"bluebubble/main.go:83","msg":"Server exiting"}
+{"level":"debug","ts":"2021-05-16T17:02:04.085+0800","caller":"bluebubble/main.go:33","msg":"logger init success"}
+{"level":"error","ts":"2021-05-16T17:04:37.793+0800","caller":"logger/logger.go:132","msg":"[Recovery from panic]","error":"runtime error: invalid memory address or nil pointer dereference","request":"POST /signup HTTP/1.1\r\nHost: localhost:8080\r\nAccept: */*\r\nAccept-Encoding: gzip, deflate, br\r\nConnection: keep-alive\r\nContent-Length: 80\r\nContent-Type: application/json\r\nPostman-Token: b2967b52-c00f-4037-acd2-825efd870d5c\r\nUser-Agent: PostmanRuntime/7.28.0\r\n\r\n","stack":"goroutine 51 [running]:\nruntime/debug.Stack(0x0, 0xc0003da000, 0x104)\n\t/usr/local/go/src/runtime/debug/stack.go:24 +0x9f\nweb_app/logger.GinRecovery.func1.1(0xc000392300, 0x1)\n\t/Users/cooper/Documents/Code/GoLand/src/bluebubble/logger/logger.go:135 +0x24c\npanic(0x178a3e0, 0x1d78fb0)\n\t/usr/local/go/src/runtime/panic.go:969 +0x175\ngithub.com/bwmarrin/snowflake.(*Node).Generate(0x0, 0x173d180)\n\t/Users/cooper/Documents/Code/VScode/Go/pkg/mod/github.com/bwmarrin/snowflake@v0.3.0/snowflake.go:137 +0x2d\nweb_app/pkg/snowflake.GenID(...)\n\t/Users/cooper/Documents/Code/GoLand/src/bluebubble/pkg/snowflake/snowflake.go:29\nweb_app/services.SignUp(...)\n\t/Users/cooper/Documents/Code/GoLand/src/bluebubble/services/user.go:13\nweb_app/controller.SignUpHandler(0xc000392300)\n\t/Users/cooper/Documents/Code/GoLand/src/bluebubble/controller/user.go:24 +0x39f\ngithub.com/gin-gonic/gin.(*Context).Next(0xc000392300)\n\t/Users/cooper/Documents/Code/VScode/Go/pkg/mod/github.com/gin-gonic/gin@v1.7.1/context.go:165 +0x3b\nweb_app/logger.GinRecovery.func1(0xc000392300)\n\t/Users/cooper/Documents/Code/GoLand/src/bluebubble/logger/logger.go:146 +0x5a\ngithub.com/gin-gonic/gin.(*Context).Next(0xc000392300)\n\t/Users/cooper/Documents/Code/VScode/Go/pkg/mod/github.com/gin-gonic/gin@v1.7.1/context.go:165 +0x3b\nweb_app/logger.GinLogger.func1(0xc000392300)\n\t/Users/cooper/Documents/Code/GoLand/src/bluebubble/logger/logger.go:87 +0x94\ngithub.com/gin-gonic/gin.(*Context).Next(0xc000392300)\n\t/Users/cooper/Documents/Code/VScode/Go/pkg/mod/github.com/gin-gonic/gin@v1.7.1/context.go:165 +0x3b\ngithub.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc0004a2000, 0xc000392300)\n\t/Users/cooper/Documents/Code/VScode/Go/pkg/mod/github.com/gin-gonic/gin@v1.7.1/gin.go:489 +0x618\ngithub.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc0004a2000, 0x194a460, 0xc0003b4000, 0xc000392200)\n\t/Users/cooper/Documents/Code/VScode/Go/pkg/mod/github.com/gin-gonic/gin@v1.7.1/gin.go:445 +0x15c\nnet/http.serverHandler.ServeHTTP(0xc0004a00e0, 0x194a460, 0xc0003b4000, 0xc000392200)\n\t/usr/local/go/src/net/http/server.go:2843 +0xa3\nnet/http.(*conn).serve(0xc0003a40a0, 0x194c760, 0xc00038e040)\n\t/usr/local/go/src/net/http/server.go:1925 +0x8ad\ncreated by net/http.(*Server).Serve\n\t/usr/local/go/src/net/http/server.go:2969 +0x36c\n"}
+{"level":"info","ts":"2021-05-16T17:04:37.793+0800","caller":"logger/logger.go:90","msg":"/signup","status":500,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.000638375}
+{"level":"info","ts":"2021-05-16T17:05:24.289+0800","caller":"bluebubble/main.go:80","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2021-05-16T17:05:24.790+0800","caller":"bluebubble/main.go:89","msg":"Server exiting"}
+{"level":"debug","ts":"2021-05-16T17:05:28.149+0800","caller":"bluebubble/main.go:33","msg":"logger init success"}
+{"level":"info","ts":"2021-05-16T17:06:25.435+0800","caller":"bluebubble/main.go:80","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2021-05-16T17:06:25.936+0800","caller":"bluebubble/main.go:89","msg":"Server exiting"}
+{"level":"debug","ts":"2021-05-16T17:06:28.073+0800","caller":"bluebubble/main.go:33","msg":"logger init success"}
+{"level":"debug","ts":"2021-05-16T17:06:34.898+0800","caller":"bluebubble/main.go:33","msg":"logger init success"}
+{"level":"debug","ts":"2021-05-16T17:07:05.503+0800","caller":"bluebubble/main.go:33","msg":"logger init success"}
+{"level":"info","ts":"2021-05-16T17:07:11.699+0800","caller":"logger/logger.go:90","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.000245196}
+{"level":"info","ts":"2021-05-16T17:07:24.889+0800","caller":"logger/logger.go:90","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.000056499}
+{"level":"info","ts":"2021-05-16T17:08:55.601+0800","caller":"bluebubble/main.go:80","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2021-05-16T17:08:56.102+0800","caller":"bluebubble/main.go:89","msg":"Server exiting"}
+{"level":"debug","ts":"2021-05-16T17:08:59.514+0800","caller":"bluebubble/main.go:33","msg":"logger init success"}
+{"level":"error","ts":"2021-05-16T17:09:02.931+0800","caller":"controller/user.go:16","msg":"SignUp with invalid param","error":"Key: 'SignUpParam.RePassword' Error:Field validation for 'RePassword' failed on the 'required' tag"}
+{"level":"info","ts":"2021-05-16T17:09:02.931+0800","caller":"logger/logger.go:90","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.000433725}
+{"level":"error","ts":"2021-05-16T17:09:24.971+0800","caller":"controller/user.go:16","msg":"SignUp with invalid param","error":"Key: 'SignUpParam.RePassword' Error:Field validation for 'RePassword' failed on the 'eqfield' tag"}
+{"level":"info","ts":"2021-05-16T17:09:24.971+0800","caller":"logger/logger.go:90","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.000159974}
+{"level":"error","ts":"2021-05-16T17:09:32.117+0800","caller":"controller/user.go:16","msg":"SignUp with invalid param","error":"Key: 'SignUpParam.RePassword' Error:Field validation for 'RePassword' failed on the 'eqfield' tag"}
+{"level":"info","ts":"2021-05-16T17:09:32.117+0800","caller":"logger/logger.go:90","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.000137038}
+{"level":"info","ts":"2021-05-16T17:09:36.339+0800","caller":"logger/logger.go:90","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.000051252}
+{"level":"info","ts":"2021-05-16T17:10:24.967+0800","caller":"bluebubble/main.go:80","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2021-05-16T17:10:25.467+0800","caller":"bluebubble/main.go:89","msg":"Server exiting"}
+{"level":"debug","ts":"2021-05-16T17:10:29.083+0800","caller":"bluebubble/main.go:33","msg":"logger init success"}
+{"level":"info","ts":"2021-05-16T17:10:36.265+0800","caller":"bluebubble/main.go:80","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2021-05-16T17:10:36.768+0800","caller":"bluebubble/main.go:89","msg":"Server exiting"}
+{"level":"debug","ts":"2021-05-16T17:11:02.556+0800","caller":"bluebubble/main.go:33","msg":"logger init success"}
+{"level":"info","ts":"2021-05-16T17:37:02.343+0800","caller":"bluebubble/main.go:80","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2021-05-16T17:37:02.845+0800","caller":"bluebubble/main.go:89","msg":"Server exiting"}
+{"level":"debug","ts":"2021-05-16T17:37:06.591+0800","caller":"bluebubble/main.go:33","msg":"logger init success"}
+{"level":"info","ts":"2021-05-16T17:39:01.344+0800","caller":"bluebubble/main.go:80","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2021-05-16T17:39:01.849+0800","caller":"bluebubble/main.go:89","msg":"Server exiting"}
+{"level":"debug","ts":"2021-05-16T17:39:22.755+0800","caller":"bluebubble/main.go:33","msg":"logger init success"}
+{"level":"debug","ts":"2021-05-16T17:40:38.218+0800","caller":"bluebubble/main.go:33","msg":"logger init success"}
+{"level":"info","ts":"2021-05-16T17:41:31.421+0800","caller":"bluebubble/main.go:80","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2021-05-16T17:41:31.922+0800","caller":"bluebubble/main.go:89","msg":"Server exiting"}
+{"level":"debug","ts":"2021-05-16T17:41:34.837+0800","caller":"bluebubble/main.go:33","msg":"logger init success"}
+{"level":"info","ts":"2021-05-16T17:55:16.239+0800","caller":"bluebubble/main.go:80","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2021-05-16T17:55:16.740+0800","caller":"bluebubble/main.go:89","msg":"Server exiting"}
+{"level":"debug","ts":"2021-05-16T17:55:20.429+0800","caller":"bluebubble/main.go:33","msg":"logger init success"}
+{"level":"info","ts":"2021-05-16T17:55:26.955+0800","caller":"logger/logger.go:101","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.002033401}
+{"level":"error","ts":"2021-05-16T17:55:36.541+0800","caller":"controller/user.go:16","msg":"SignUp with invalid param","error":"Key: 'SignUpParam.RePassword' Error:Field validation for 'RePassword' failed on the 'eqfield' tag"}
+{"level":"info","ts":"2021-05-16T17:55:36.541+0800","caller":"logger/logger.go:101","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.000138886}
+{"level":"info","ts":"2021-05-16T17:56:13.861+0800","caller":"bluebubble/main.go:80","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2021-05-16T17:56:14.363+0800","caller":"bluebubble/main.go:89","msg":"Server exiting"}
+{"level":"debug","ts":"2021-05-16T17:56:17.299+0800","caller":"bluebubble/main.go:33","msg":"logger init success"}
+{"level":"error","ts":"2021-05-16T17:56:20.571+0800","caller":"controller/user.go:16","msg":"SignUp with invalid param","error":"Key: 'SignUpParam.RePassword' Error:Field validation for 'RePassword' failed on the 'eqfield' tag"}
+{"level":"info","ts":"2021-05-16T17:56:20.571+0800","caller":"logger/logger.go:101","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.000308291}
+{"level":"info","ts":"2021-05-16T17:57:05.441+0800","caller":"bluebubble/main.go:80","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2021-05-16T17:57:05.944+0800","caller":"bluebubble/main.go:89","msg":"Server exiting"}
+{"level":"debug","ts":"2021-05-16T17:57:09.549+0800","caller":"bluebubble/main.go:33","msg":"logger init success"}
+{"level":"error","ts":"2021-05-16T17:57:17.831+0800","caller":"controller/user.go:16","msg":"SignUp with invalid param","error":"Key: 'SignUpParam.RePassword' Error:Field validation for 'RePassword' failed on the 'eqfield' tag"}
+{"level":"info","ts":"2021-05-16T17:57:17.831+0800","caller":"logger/logger.go:101","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.000379472}
+{"level":"info","ts":"2021-05-16T17:57:41.581+0800","caller":"bluebubble/main.go:80","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2021-05-16T17:57:42.086+0800","caller":"bluebubble/main.go:89","msg":"Server exiting"}
+{"level":"debug","ts":"2021-05-16T17:57:44.410+0800","caller":"bluebubble/main.go:33","msg":"logger init success"}
+{"level":"error","ts":"2021-05-16T17:57:52.903+0800","caller":"controller/user.go:16","msg":"SignUp with invalid param","error":"Key: 'SignUpParam.RePassword' Error:Field validation for 'RePassword' failed on the 'eqfield' tag"}
+{"level":"info","ts":"2021-05-16T17:57:52.903+0800","caller":"logger/logger.go:101","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.000348189}
+{"level":"info","ts":"2021-05-16T17:59:01.440+0800","caller":"bluebubble/main.go:80","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2021-05-16T17:59:01.440+0800","caller":"bluebubble/main.go:89","msg":"Server exiting"}
+{"level":"debug","ts":"2021-05-16T17:59:04.490+0800","caller":"bluebubble/main.go:33","msg":"logger init success"}
+{"level":"error","ts":"2021-05-16T17:59:08.598+0800","caller":"controller/user.go:16","msg":"SignUp with invalid param","error":"Key: 'SignUpParam.RePassword' Error:Field validation for 'RePassword' failed on the 'eqfield' tag"}
+{"level":"info","ts":"2021-05-16T17:59:08.598+0800","caller":"logger/logger.go:101","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.000311518}
+{"level":"info","ts":"2021-05-16T17:59:14.251+0800","caller":"logger/logger.go:101","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.002840067}
+{"level":"info","ts":"2021-05-16T18:00:01.838+0800","caller":"bluebubble/main.go:80","msg":"Shutdown Server ..."}
+{"level":"info","ts":"2021-05-16T18:00:02.340+0800","caller":"bluebubble/main.go:89","msg":"Server exiting"}
