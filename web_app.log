@@ -95,3 +95,5 @@
 {"level":"info","ts":"2021-05-16T17:59:14.251+0800","caller":"logger/logger.go:101","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.002840067}
 {"level":"info","ts":"2021-05-16T18:00:01.838+0800","caller":"bluebubble/main.go:80","msg":"Shutdown Server ..."}
 {"level":"info","ts":"2021-05-16T18:00:02.340+0800","caller":"bluebubble/main.go:89","msg":"Server exiting"}
+{"level":"debug","ts":"2021-05-16T22:46:04.540+0800","caller":"bluebubble/main.go:33","msg":"logger init success"}
+{"level":"error","ts":"2021-05-16T22:46:06.619+0800","caller":"mysql/mysql.go:20","msg":"connect db failed","error":"dial tcp 127.0.0.1:3306: connectex: No connection could be made because the target machine actively refused it."}
